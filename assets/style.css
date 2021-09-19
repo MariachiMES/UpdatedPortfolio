@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: black;
+  font-weight: bolder;
+  position: relative;
+}
+header {
+  border-bottom: gold solid 4px;
+}
+nav {
+  color: white;
+  font-size: 30px;
+  font-weight: bolder;
+}
+.navbar {
+  text-align: right;
+  list-style-type: none;
+  margin-right: 20px;
+  padding: 20px;
+}
+li {
+  display: inline;
+  transition: 0.5s;
+  padding: 20px;
+}
+li:hover {
+  color: gold;
+}
+.background-container {
+  transform: rotate(-5deg);
+
+  justify-content: center;
+}
+.stripe {
+  padding-left: 70px;
+  padding-top: 15px;
+  padding-bottom: -30px;
+  font-size: 30px;
+  transform: skew(-5deg);
+}
+#stripe0 {
+  background-color: rgb(71, 71, 255, 0.8);
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  margin-left: -60px;
+}
+#stripe1 {
+  background-color: rgb(118, 223, 118, 0.8);
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  margin-left: -65px;
+}
+#stripe2 {
+  background-color: rgb(250, 250, 116, 0.8);
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  margin-left: -70px;
+}
+#stripe3 {
+  background-color: rgb(226, 173, 74, 0.8);
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  margin-left: -75px;
+}
+#stripe4 {
+  background-color: rgb(241, 85, 241, 0.8);
+  width: 100%;
+  height: 35px;
+  transition: 0.3s;
+  margin-left: -80px;
+}
+#stripe0:hover {
+  background-color: white;
+  width: 130%;
+  height: 35px;
+  box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 60, 255),
+    0 0 20px 10px rgb(0, 225, 255);
+  color: black;
+  font-size: 35px;
+}
+#stripe1:hover {
+  background-color: white;
+  width: 130%;
+  height: 35px;
+  box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 255, 42),
+    0 0 20px 10px rgb(255, 251, 0);
+  color: black;
+  font-size: 35px;
+}
+#stripe2:hover {
+  background-color: white;
+  width: 130%;
+  height: 35px;
+  box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(251, 255, 0),
+    0 0 20px 10px rgb(0, 255, 119);
+  color: black;
+  font-size: 35px;
+}
+#stripe3:hover {
+  background-color: white;
+  width: 130%;
+  height: 35px;
+  box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(255, 157, 0),
+    0 0 20px 10px rgb(255, 0, 0);
+  color: black;
+  font-size: 35px;
+}
+#stripe4:hover {
+  background-color: white;
+  width: 130%;
+  height: 35px;
+  box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px #f0f, 0 0 20px 10px #0ff;
+  color: black;
+  font-size: 35px;
+}
+.main {
+  margin-top: 5vh;
+  padding-left: 40px;
+  background-image: url("/assets/images/computerImage.jpg");
+  background-size: cover;
+  background-position: 0px -300px;
+  height: 70vh;
+}
+.heading {
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+}
+.heading::after {
+  content: " :: 2021";
+  color: rgb(0, 225, 255);
+}
+.stuffs {
+  margin-top: 11vh;
+  text-align: center;
+}
+footer {
+  border-top: gold solid 4px;
+  width: 100%;
+  height: 10px;
+  text-align: center;
+}
+.icon {
+  height: 30px;
+  width: 30px;
+  margin-left: 20px;
+}
+.social-icons {
+  margin-left: 50%;
+  width: 217px;
+  padding: 20px;
+  transform: translate(-50%);
+}
+img:hover {
+  animation-name: spin;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
