@@ -1,4 +1,4 @@
-var pagesArray = [
+const pagesArray = [
   "github.html",
   "portfolio.html",
   "resume.html",
@@ -6,16 +6,16 @@ var pagesArray = [
   "contact.html",
 ];
 
-var nextPage = function () {
-  for (var i = 0; i < 5; i++) {
+var nextPage = function (pagesArray) {
+  for (var i = 0; i < pagesArray.length; i++) {
     document
       .querySelector(`#stripe${i}`)
       .addEventListener("click", openNewPage);
 
     function openNewPage(pagesArray) {
-      window.open(pagesArray[i]);
+      window.open(`${i}`);
+
       //   window.location.replace(pagesArray[i]);
-      console.log(pagesArray[i]);
     }
   }
 };
