@@ -190,6 +190,14 @@ footer {
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+a:visited {
+  color: black;
+  text-decoration: none;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
