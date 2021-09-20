@@ -135,8 +135,8 @@ li:hover {
   color: white;
 }
 .heading::after {
-  content: " :: 2021";
-  color: rgb(0, 225, 255);
+  content: " ::PORTFOLIO";
+  color: rgb(0, 255, 42);
 }
 .stuffs {
   margin-top: 11vh;
@@ -147,6 +147,7 @@ footer {
   width: 100%;
   height: 10px;
   text-align: center;
+  color: white;
 }
 .icon {
   height: 30px;
@@ -160,10 +161,13 @@ footer {
   transform: translate(-50%);
 }
 .portfolio-cards {
-  display: flex;
+  display: -webkit-inline-flex;
+  position: relative;
+  max-height: 300px;
 }
 
 .card {
+  display: flex;
   border: gold solid 4px;
   height: 300px;
   width: 300px;
@@ -177,7 +181,9 @@ footer {
 }
 #project:hover {
   filter: opacity(1);
+  transition: 0.5s ease-in-out;
 }
+
 #circle-rotate:hover {
   animation-name: spin;
   animation-duration: 750ms;
