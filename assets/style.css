@@ -83,7 +83,7 @@ li:hover {
 }
 #stripe0:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 60, 255),
     0 0 20px 10px rgb(0, 225, 255);
@@ -92,7 +92,7 @@ li:hover {
 }
 #stripe1:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 255, 42),
     0 0 20px 10px rgb(255, 251, 0);
@@ -101,7 +101,7 @@ li:hover {
 }
 #stripe2:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(251, 255, 0),
     0 0 20px 10px rgb(0, 255, 119);
@@ -110,7 +110,7 @@ li:hover {
 }
 #stripe3:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(255, 157, 0),
     0 0 20px 10px rgb(255, 0, 0);
@@ -119,7 +119,7 @@ li:hover {
 }
 #stripe4:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px #f0f, 0 0 20px 10px #0ff;
   color: black;

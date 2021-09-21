@@ -25,7 +25,7 @@ nav {
   font-weight: bolder;
 }
 .navbar {
-  text-align: right;
+  text-align: left;
   list-style-type: none;
   margin-right: 20px;
   padding: 20px;
@@ -86,7 +86,7 @@ li:hover {
 }
 #stripe0:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 60, 255),
     0 0 20px 10px rgb(0, 225, 255);
@@ -95,7 +95,7 @@ li:hover {
 }
 #stripe1:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(0, 255, 42),
     0 0 20px 10px rgb(255, 251, 0);
@@ -104,7 +104,7 @@ li:hover {
 }
 #stripe2:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(251, 255, 0),
     0 0 20px 10px rgb(0, 255, 119);
@@ -113,7 +113,7 @@ li:hover {
 }
 #stripe3:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px rgb(255, 157, 0),
     0 0 20px 10px rgb(255, 0, 0);
@@ -122,7 +122,7 @@ li:hover {
 }
 #stripe4:hover {
   background-color: white;
-  width: 130%;
+  width: 100%;
   height: 35px;
   box-shadow: 0 0 10px 3px #fff, 0 0 10px 6px #f0f, 0 0 20px 10px #0ff;
   color: black;
@@ -224,9 +224,10 @@ footer {
 }
 #stripe4:hover::after {
   color: black;
-  content: ":        davidjortizmusic@gmail.com | 210.265.7992";
+  content: " : davidjortizmusic@gmail.com";
   transition: 0.5s ease-in-out;
   font-size: 20px;
+  flex-wrap: none;
 }
 a {
   color: black;
@@ -306,5 +307,14 @@ a:visited {
   #project:hover {
     filter: opacity(1);
     transition: 0.5s ease-in-out;
+  }
+}
+@media only screen and (max-width: 414px) {
+  #stripe4:hover::after {
+    color: black;
+    content: " :210.265.7992";
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+    flex-wrap: none;
   }
 }
