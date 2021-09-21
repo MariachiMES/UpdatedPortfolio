@@ -128,7 +128,6 @@ li:hover {
 .main {
   margin-top: 5vh;
   padding-left: 40px;
-  background-image: url("/assets/images/computerImage.jpg");
   background-size: cover;
   background-position: 0px -300px;
   height: 100%;

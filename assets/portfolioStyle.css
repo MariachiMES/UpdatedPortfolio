@@ -13,6 +13,12 @@ header {
   border-bottom: gold solid 4px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+header a {
+  color: white;
+}
+header a:visited {
+  color: white;
+}
 nav {
   color: white;
   font-size: 30px;
@@ -34,7 +40,6 @@ li:hover {
 }
 .background-container {
   transform: rotate(-5deg);
-
   justify-content: center;
 }
 .stripe {
