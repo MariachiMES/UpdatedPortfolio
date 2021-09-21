@@ -280,4 +280,25 @@ img .icon:hover {
     display: inline-block;
     padding: 12px;
   }
+  .details {
+    color: white;
+    line-height: 1.5em;
+    text-shadow: 1px 1px black;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+}
+@media only screen and (max-width: 414px) {
+  .details {
+    color: white;
+    line-height: 1.5em;
+    text-shadow: 1px 1px black;
+    justify-content: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+    display: inline-flex;
+  }
 }
