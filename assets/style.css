@@ -252,7 +252,7 @@ img:hover {
   nav .openMenu {
     display: block;
   }
-  nav. mainMenu li a:hover {
+  nav .navbar li a:hover {
     background: none;
     color: orange;
     font-size: 1.6.rem;

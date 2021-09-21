@@ -129,6 +129,7 @@ li:hover {
   background-color: black;
   background-size: cover;
   background-position: 0px -300px;
+  height: 100vh;
 }
 .heading {
   font-size: 40px;
@@ -164,13 +165,13 @@ footer {
   transform: translate(-50%);
 }
 .portfolio-cards {
-  display: -webkit-inline-flex;
+  display: flex;
   position: relative;
-  max-height: 300px;
+  flex-wrap: wrap;
 }
 
 .card {
-  display: flex;
+  display: inline;
   border: gold solid 4px;
   height: 300px;
   width: 300px;
@@ -213,5 +214,48 @@ a:visited {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+
+  nav .navbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: columnn;
+    justify-content: center;
+    alight-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .navbar .closeMenu {
+    display: block;
+    position: aboslute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav. mainMenu li a:hover {
+    background: none;
+    color: orange;
+    font-size: 1.6.rem;
+  }
+  .hamburger-icons {
+    display: inline-block;
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 768) {
+  .portfolio-cards {
+    margin-left: 2rem;
   }
 }
