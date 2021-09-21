@@ -184,8 +184,8 @@ a:visited {
   line-height: 1.5em;
   text-shadow: 1px 1px black;
   justify-content: center;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 25px;
+  margin-right: 100px;
   position: relative;
   display: inline-flex;
 }
