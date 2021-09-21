@@ -129,7 +129,7 @@ li:hover {
   background-color: black;
   background-size: cover;
   background-position: 0px -300px;
-  height: 100vh;
+  height: 100%;
 }
 .heading {
   font-size: 40px;
@@ -168,6 +168,29 @@ footer {
   display: flex;
   position: relative;
   flex-wrap: wrap;
+}
+#fb:hover {
+  background: rgb(31, 128, 255);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+#ig:hover {
+  background-image: linear-gradient(rgb(240, 78, 255), rgb(255, 0, 0));
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+#gh:hover {
+  background: rgb(255, 137, 3);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .card {
@@ -230,7 +253,7 @@ a:visited {
     z-index: 10;
     flex-direction: columnn;
     justify-content: center;
-    alight-items: center;
+    align-items: center;
     background: black;
     transition: top 1s ease;
     display: none;
@@ -244,7 +267,7 @@ a:visited {
   nav .openMenu {
     display: block;
   }
-  nav. mainMenu li a:hover {
+  nav .navbar li a:hover {
     background: none;
     color: orange;
     font-size: 1.6.rem;
@@ -254,8 +277,29 @@ a:visited {
     padding: 12px;
   }
 }
-@media only screen and (max-width: 768) {
+@media only screen and (max-width: 674) {
   .portfolio-cards {
-    margin-left: 2rem;
+    display: block;
+    position: absolute;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .card {
+    display: block;
+    border: gold solid 4px;
+    height: auto;
+    width: auto;
+    margin-bottom: 40px;
+    margin: 5px;
+    align-items: center;
+  }
+  #project {
+    height: auto;
+    filter: opacity(0.4);
+  }
+  #project:hover {
+    filter: opacity(1);
+    transition: 0.5s ease-in-out;
   }
 }
