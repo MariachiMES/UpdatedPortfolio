@@ -11,6 +11,7 @@ body {
 }
 header {
   border-bottom: gold solid 4px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 nav {
   color: white;
@@ -133,6 +134,7 @@ li:hover {
   font-size: 40px;
   font-weight: bolder;
   color: white;
+  margin-bottom: 30px;
 }
 .heading::after {
   content: " ::PORTFOLIO";
@@ -148,6 +150,7 @@ footer {
   height: 10px;
   text-align: center;
   color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .icon {
   height: 30px;
@@ -189,6 +192,12 @@ footer {
   animation-duration: 750ms;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+}
+#stripe4:hover::after {
+  color: black;
+  content: ":        davidjortizmusic@gmail.com | 210.265.7992";
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
 }
 a {
   color: black;

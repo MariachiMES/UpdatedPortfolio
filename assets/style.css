@@ -10,13 +10,16 @@ body {
   position: relative;
 }
 header {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   border-bottom: gold solid 4px;
 }
 nav {
   color: white;
   font-size: 30px;
   font-weight: bolder;
+  display: flex;
 }
+
 .navbar {
   text-align: right;
   list-style-type: none;
@@ -128,15 +131,15 @@ li:hover {
   background-image: url("/assets/images/computerImage.jpg");
   background-size: cover;
   background-position: 0px -300px;
-  height: 70vh;
 }
 .heading {
   font-size: 40px;
   font-weight: bolder;
   color: white;
+  margin-bottom: 30px;
 }
 .heading::after {
-  content: " :: 2021";
+  content: " :: DAVID ORTIZ";
   color: rgb(0, 225, 255);
 }
 .stuffs {
@@ -148,6 +151,8 @@ footer {
   width: 100%;
   height: 10px;
   text-align: center;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .icon {
   height: 30px;
@@ -160,11 +165,11 @@ footer {
   padding: 20px;
   transform: translate(-50%);
 }
-img:hover {
-  animation-name: spin;
-  animation-duration: 750ms;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
+header a {
+  color: white;
+}
+header a:visited {
+  color: white;
 }
 a {
   color: black;
@@ -174,11 +179,86 @@ a:visited {
   color: black;
   text-decoration: none;
 }
+#fb:hover {
+  background: rgb(31, 128, 255);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+#ig:hover {
+  background-image: linear-gradient(rgb(240, 78, 255), rgb(255, 0, 0));
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+}
+#gh:hover {
+  background: rgb(255, 137, 3);
+  border-radius: 50%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+}
+#li:hover {
+}
+#stripe4:hover::after {
+  color: black;
+  content: ":        davidjortizmusic@gmail.com | 210.265.7992";
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+}
+img:hover {
+  animation-name: spin;
+  animation-duration: 750ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
 @keyframes spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@media only screen and (max-width: 1000px) {
+  ul {
+    display: none;
+  }
+
+  nav .navbar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    flex-direction: columnn;
+    justify-content: center;
+    alight-items: center;
+    background: black;
+    transition: top 1s ease;
+    display: none;
+  }
+  nav .navbar .closeMenu {
+    display: block;
+    position: aboslute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav. mainMenu li a:hover {
+    background: none;
+    color: orange;
+    font-size: 1.6.rem;
+  }
+  .hamburger-icons {
+    display: inline-block;
+    padding: 12px;
   }
 }
