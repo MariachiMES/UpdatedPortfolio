@@ -42,6 +42,17 @@ li:hover {
   transform: rotate(-5deg);
   justify-content: center;
 }
+.repo {
+  color: white;
+  background-color: darkblue;
+  line-height: 2em;
+  width: 300px;
+  padding-top: 20px;
+}
+.repo:hover {
+  background-color: goldenrod;
+  transition: 0.3s;
+}
 .stripe {
   padding-left: 70px;
   padding-top: 15px;
